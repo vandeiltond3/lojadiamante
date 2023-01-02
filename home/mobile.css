@@ -1,0 +1,114 @@
+@media(max-width: 967px){
+    .hcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carrinho{
+        display: none;
+    }
+    
+    nav{
+        border-top: 1px solid rgba(128, 128, 128, 0.384);
+    }
+    
+    ul:last-child{
+        border-right: 1px solid rgba(128, 128, 128, 0.384);
+    }
+}
+
+@media(max-width: 637px){
+    .logo img{
+        height: 40px;
+    }
+
+    nav{
+        height: 40px;
+    }
+
+    li > a{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    a:last-child{
+        font-size: 10px;
+    }
+
+    .descricao{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: baseline;
+    }
+
+    .descricao h1{
+        font-size: 16px;
+    }
+
+    .descricao p{
+        font-size: 12px;
+    }
+
+    h3{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .description{
+        margin: 5px;
+        width: 144px;
+    }
+
+    .description img{
+        width: 144px;
+        height: 217px;
+        margin: 5px;
+    }
+
+    .description1{
+        width: 150px;
+        margin: 5px;
+    }
+
+    .description1 img{
+        width: 150px;
+        height: 177px;
+        margin: 5px;
+    }
+
+    span{
+        font-size: 13px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    .cnpj{
+        font-size: 12px;
+        margin: 5px;
+        padding: 5px;
+        padding-top: 15px;
+    }
+
+    footer{
+        display: block;
+        margin-top: 15px;
+    }
+
+    footer > div{
+        padding: 5px;
+    }
+
+    footer > div > h2{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    footer > div > p{
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+}

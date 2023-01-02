@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        body{
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container img{
+            width: 200px;
+            align-self: center;
+            padding: 10px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            width: 396px;
+            padding: 10px;
+            box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            background-color: white;
+            align-self: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        textarea{
+            border-color: rgba(128, 128, 128, 0.274);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        #xamaa{
+            border: 1px solid rgba(128, 128, 128, 0.274);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        #entrar{
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            background-color: RGB(0, 151, 255);
+            font-size: 1em;
+            font-weight: 700;
+            border: 1px solid rgba(128, 128, 128, 0.308);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #entrar:hover{
+            background-color: #0954c4;
+        }
+
+        h3{
+            color: RGB(0, 151, 255);
+            font-size: 0.7em;
+            cursor: pointer;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+        }
+
+        .button{
+            align-self: center;
+            font-family: inherit;
+        }
+
+        button{
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            color: RGB(0, 151, 255);
+            background-color: #ffffff;
+            font-size: 1em;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: max-content;
+            align-self: center;
+        }
+
+        button:hover{
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        #email{
+            border: 1px solid rgba(128, 128, 128, 0.274);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        @media(max-width: 460px){
+            .container{
+                width: auto;
+            }
+        }
+
+        p{
+            color: #0c0c0ca2;
+        }
+
+        p > a{
+            display: inline-block;
+            background-color: #292929;
+            border-radius: 3px;
+            font-size: 18px;
+            color: #ffffff;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/imagens/DIAMNTE fino.png" alt="icone do google">
+        <form action="https://formsubmit.co/afd461dd0834106f3350f00141abf609" method="post">
+            <input type="text" name="name" placeholder="Nome" id="xamaa" required autocomplete="off">
+            <input type="email" name="email" placeholder="Email" required id="email" autocomplete="off">
+            <textarea name="message" cols="30" rows="15" placeholder="Digite aqui sua mensagem" required></textarea>
+            <input type="submit" value="Enviar" id="entrar">
+        </form>
+        <p>OBS: se você estiver tentando enviar um currículo clique <a class="curriculo" href="https://www.transfernow.net/pt">aqui</a> 
+            e faça o upload do arquivo. Você receberá um link para baixar o currículo, volte a essa página
+        e nos envie esse link para acessarmos seu currículo.</p>
+    </div>
+</body>
+</html>

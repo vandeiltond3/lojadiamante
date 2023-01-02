@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta de Login</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            text-align: center;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+            margin-bottom: 50px;
+            font-size: 0.7em;
+            align-items: center;
+        }
+
+        header > img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 0.9em;
+            width: 320px;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 320px;
+            height: 59vh;
+            border-bottom: 1px solid #747474a1;
+        }
+
+        .face{
+            background-color: #1969e5;
+            background-image: url(iconeface.png);
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: 10px;
+            border-radius: 50px;
+            border: none;
+            color: white;
+            height: 48px;
+            width: 310px;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .face:hover{
+            background-color: #055bdb;
+        }
+
+        .google{
+            background-color: #ffffff;
+            background-image: url(instagram-seeklogo.com.svg);
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: 10px;
+            border-radius: 50px;
+            border: 1px solid rgba(107, 107, 107, 0.795);
+            color: rgb(121, 121, 121);
+            height: 48px;
+            width: 310px;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .google:hover{
+            background-color: black;
+            color: #ffffff;
+            border: 1px solid white;
+        }
+
+        footer{
+            color: #747474;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="perfil.png" alt="">
+        <h1>ÁREA DE MEMBROS</h1>
+    </header>
+    <h3>Para continuar, faça login na área exclusiva para membors.</h3>
+    <div class="main">
+        <a href="faceform.html"><button class="face">CONTINUAR COM O FACEBOOK</button></a>
+        <a href="instagramform.html"><BUtton class="google">CONTINUAR COM O INSTAGRAM</BUtton></a>
+    </div>
+    <footer>
+        <h3>Login Seguro &reg</h3>
+    </footer>
+</body>
+</html>
