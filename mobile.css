@@ -5,10 +5,6 @@
         align-items: center;
     }
     
-    .carrinho{
-        display: none;
-    }
-    
     nav{
         border-top: 1px solid rgba(128, 128, 128, 0.384);
     }
@@ -16,11 +12,17 @@
     ul:last-child{
         border-right: 1px solid rgba(128, 128, 128, 0.384);
     }
+
+    .logo img{
+        height: 40px;
+        margin: 20px;
+    }
 }
 
 @media(max-width: 637px){
     .logo img{
         height: 40px;
+        margin: 20px;
     }
 
     nav{
